@@ -3,7 +3,7 @@
 #include <vector>
 
 using namespace std;
-int score(int arr[], int n) {
+void score(int arr[], int n) {
     int min = 0, max = 0, sum = 0;
     for (int i = 1; i < n; i++) {
         if (arr[min] > arr[i]) min = i;
@@ -19,10 +19,9 @@ int score(int arr[], int n) {
     cout << sum << endl;
     fout << sum;
     fout.close();
-    return 0;
 }
 
-int fail() {
+void fail() {
     cout << "Хорошо, читаю файл." << endl;
     ifstream fin("2laba.txt");
     if (!fin.is_open())
@@ -37,10 +36,9 @@ int fail() {
         }
         score(arr, n);
     }
-    return 0;
 }
 
-int cons() {
+void cons() {
     cout << "Хорошо, вводите данные. Для начала введите число n." << endl;
     int n;
     cin >> n;
@@ -61,7 +59,6 @@ int cons() {
     else {
         cout << "Хорошо, завершаю работу." << endl;
     }
-    return 0;
 }
 int main()
 {
