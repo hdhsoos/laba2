@@ -59,17 +59,8 @@ int end_cons() {
 
 void cons() {
     cout << "Хорошо, вводите данные. Для начала введите число n." << endl;
-    char n[256]{};
+    int n{};
     cin >> n;
-    int i{};
-    bool isd{};
-    isd = isdi(n);
-    if (isd == 1) {
-        cout << "Ошибка ввода. Попробуйте снова." << endl;
-        cons();
-    }
-    int ne;
-    ne = int(n)
     cout << "Теперь введите оценки." << endl;
     int i{};
     int* arr{};
@@ -77,6 +68,6 @@ void cons() {
     for (i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    score(arr, ne);
+    score(arr, n);
     end_cons();
 }
