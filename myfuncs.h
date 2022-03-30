@@ -4,5 +4,6 @@
 void score();
 void fail();
 void cons();
+int end_cons();
 
 #endif
