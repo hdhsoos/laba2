@@ -5,5 +5,6 @@ void score();
 void fail();
 void cons();
 int end_cons();
+int vivod();
 
 #endif
